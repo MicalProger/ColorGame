@@ -1,0 +1,5 @@
+C:\Users\RazRab\source\repos\ColorGameC\ColorGameCore\bin\Debug\ColorGameCore.dll
+C:\Users\RazRab\source\repos\ColorGameC\ColorGameCore\bin\Debug\ColorGameCore.pdb
+C:\Users\RazRab\source\repos\ColorGameC\ColorGameCore\obj\Debug\ColorGameCore.csproj.CoreCompileInputs.cache
+C:\Users\RazRab\source\repos\ColorGameC\ColorGameCore\obj\Debug\ColorGameCore.dll
+C:\Users\RazRab\source\repos\ColorGameC\ColorGameCore\obj\Debug\ColorGameCore.pdb

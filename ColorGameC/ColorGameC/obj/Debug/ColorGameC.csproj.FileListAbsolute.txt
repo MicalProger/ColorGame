@@ -5,3 +5,10 @@ C:\Users\RazRab\source\repos\ColorGameC\ColorGameC\obj\Debug\ColorGameC.csproj.A
 C:\Users\RazRab\source\repos\ColorGameC\ColorGameC\obj\Debug\ColorGameC.csproj.CoreCompileInputs.cache
 C:\Users\RazRab\source\repos\ColorGameC\ColorGameC\obj\Debug\ColorGameC.exe
 C:\Users\RazRab\source\repos\ColorGameC\ColorGameC\obj\Debug\ColorGameC.pdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\bin\Debug\ColorGameC.exe.config
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\bin\Debug\ColorGameC.exe
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\bin\Debug\ColorGameC.pdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\obj\Debug\ColorGameC.csproj.AssemblyReference.cache
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\obj\Debug\ColorGameC.csproj.CoreCompileInputs.cache
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\obj\Debug\ColorGameC.exe
+C:\Users\RazRab\source\repos\ColorGame\ColorGameC\ColorGameC\obj\Debug\ColorGameC.pdb

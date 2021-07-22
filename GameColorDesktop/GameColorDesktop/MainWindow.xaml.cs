@@ -24,7 +24,7 @@ namespace GameColorDesktop
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new GamePage());
+            MainFrame.Navigate(new StartPage());
         }
     }
 }

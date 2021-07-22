@@ -12,12 +12,12 @@
         <DockPanel>
             
         <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
-                <Button Background="Red" Click="AddColor" Margin="5" Height="35">Red</Button>
-                <Button Background="Green" Click="AddColor" Margin="5" Height="35">Green</Button>
-                <Button Background="Blue" Click="AddColor" Margin="5" Height="35">Blue</Button>
-                <Button Background="Yellow" Click="AddColor" Margin="5" Height="35">Yellow</Button>
-                <Button Background="White" Click="AddColor" Margin="5" Height="35">Wihte</Button>
-                <Button Background="Black" Click="AddColor" Foreground="Wheat" Margin="5" Height="35">Black</Button>
+                <Button Background="Red" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Red</Button>
+                <Button Background="Green" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Green</Button>
+                <Button Background="Blue" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Blue</Button>
+                <Button Background="Yellow" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Yellow</Button>
+                <Button Background="White" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Wihte</Button>
+                <Button Background="Black" Click="AddColor" Foreground="Wheat" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Black</Button>
             </StackPanel>
             <StackPanel  Background="Wheat" DockPanel.Dock="Left" Orientation="Horizontal" Name="ColorsSP">
                 

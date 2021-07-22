@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\RazRab\source\repos\GameColorDesktop\GameColorDesktop\obj\Debug\
+C:\Users\RazRab\source\repos\ColorGame\GameColorDesktop\GameColorDesktop\obj\Debug\
 GameColorDesktop
 none
 false
 DEBUG;TRACE
-C:\Users\RazRab\source\repos\GameColorDesktop\GameColorDesktop\App.xaml
-21124491640
+C:\Users\RazRab\source\repos\ColorGame\GameColorDesktop\GameColorDesktop\App.xaml
+41187606022
 
-6583801374
-141604780267
-MainWindow.xaml;Pages\GamePage.xaml;
+9213624028
+15743839391
+MainWindow.xaml;Pages\GamePage.xaml;Pages\RecordsPage.xaml;Pages\StartPage.xaml;
 
 False
 

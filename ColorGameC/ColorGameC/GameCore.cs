@@ -21,12 +21,13 @@ namespace ColorGameC
 
     public class GameCore
     {
-        public static List<SolidColorBrush> colors = new List<SolidColorBrush>() { new SolidColorBrush(Color.FromRgb(128, 0, 0)),
-            new SolidColorBrush(Color.FromRgb(0, 255, 0)),
-            new SolidColorBrush(Color.FromRgb(0, 0, 255)),
-            new SolidColorBrush(Color.FromRgb(255, 255, 0)),
-            new SolidColorBrush(Color.FromRgb(0, 0, 0)),
-            new SolidColorBrush(Color.FromRgb(255, 255, 255)) };
+        public static List<SolidColorBrush> colors = new List<SolidColorBrush>() {
+            (SolidColorBrush) new BrushConverter().ConvertFromString("Red"),
+            (SolidColorBrush) new BrushConverter().ConvertFromString("Green"),
+            (SolidColorBrush) new BrushConverter().ConvertFromString("Blue"),
+            (SolidColorBrush) new BrushConverter().ConvertFromString("Yellow"),
+            (SolidColorBrush) new BrushConverter().ConvertFromString("Black"),
+            (SolidColorBrush) new BrushConverter().ConvertFromString("White"), };
         List<SolidColorBrush> row;
         int attempts;
         public GameCore()

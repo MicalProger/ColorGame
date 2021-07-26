@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ColorGameCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace GameColorDesktop.Pages
         public StartPage()
         {
             InitializeComponent();
+            if (MessageBox.Show("Усложнить игру", "Начало игры", MessageBoxButton.YesNo) == MessageBoxResult.OK)
+               GamePage.Mode = GameMode.MatchingColors;
+            else
+                GamePage.Mode = GameMode.SingleColors;
         }
 
         private void OnGameOpen(object sender, RoutedEventArgs e)

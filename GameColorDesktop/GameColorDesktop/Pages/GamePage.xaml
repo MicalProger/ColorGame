@@ -8,21 +8,61 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GamePage">
 
-    <Grid>
-        <DockPanel>
-            
-        <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
+    <Grid x:Name="BaseGrid">
+        <TextBlock x:Name="TimeTB" Margin="5" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <DockPanel Background="Wheat">
+
+            <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
                 <Button Background="Red" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Red</Button>
                 <Button Background="Green" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Green</Button>
                 <Button Background="Blue" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Blue</Button>
                 <Button Background="Yellow" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Yellow</Button>
                 <Button Background="White" Click="AddColor" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Wihte</Button>
                 <Button Background="Black" Click="AddColor" Foreground="Wheat" Margin="5" Height="35" Style="{DynamicResource ButtonStyle1}">Black</Button>
+                <Button Margin="5" Click="OnPause" IsCancel="True" x:Name="PauseBtn">Пауза</Button>
             </StackPanel>
-            <StackPanel  Background="Wheat" DockPanel.Dock="Left" Orientation="Horizontal" Name="ColorsSP">
-                
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="100"/>
+            <StackPanel DockPanel.Dock="Left">
+                <ListView Padding="0" x:Name="LocalTryLW" Margin="5"  Width="95" Height="340" VerticalAlignment="Top" Background="Transparent">
+
+                </ListView>
+                <Button Content="Опубиковать" Margin="5" Click="OnGetRespone"/>
             </StackPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Disabled" DockPanel.Dock="Right" HorizontalScrollBarVisibility="Visible">
+                <StackPanel  Orientation="Horizontal" Name="ColorsSP"/>
+
+            </ScrollViewer>
         </DockPanel>
+        <Grid Background="#99E4E4E4" Name="MenuGrid" Visibility="Collapsed">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Click="OnContinue" FontSize="25" Margin="5" IsCancel="True">Продолжить</Button>
+                <Button Click="OnRestart" FontSize="25" Margin="5">Начать заного</Button>
+                <Button Click="OnGoBack" FontSize="25" Margin="5">Вернутся в меню</Button>
+
+            </StackPanel>
+            <Grid HorizontalAlignment="Right" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <GroupBox  Margin="5" Header="Легкий режим">
+
+                    <DataGrid x:Name="RecordsDGEasy" HorizontalAlignment="Right" DockPanel.Dock="Right" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Время" Binding="{Binding Time}"/>
+                            <DataGridTextColumn Header="Попытки" Binding="{Binding Attemps}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+                <GroupBox  Margin="5" Grid.Row="1" Header="Сложный режим">
+
+                    <DataGrid x:Name="RecordsDGHard" HorizontalAlignment="Right" DockPanel.Dock="Right" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Время" Binding="{Binding Time}"/>
+                            <DataGridTextColumn Header="Попытки" Binding="{Binding Attemps}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

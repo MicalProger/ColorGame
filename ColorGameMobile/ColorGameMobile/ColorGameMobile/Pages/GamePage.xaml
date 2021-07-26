@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorGameMobile.Pages.GamePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="End">
+            <StackLayout  Background="Wheat" HeightRequest="750" Orientation="Horizontal"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" x:Name="ButtonsSL">
+                <Button Background="Red" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45"></Button>
+                <Button Background="Green" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45"></Button>
+                <Button Background="Blue" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45" ></Button>
+                <Button Background="Yellow" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45" ></Button>
+                <Button Background="White" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45"></Button>
+                <Button Background="Black" Clicked="AddColor" TextColor="Wheat" Margin="5" HeightRequest="45" WidthRequest="45"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

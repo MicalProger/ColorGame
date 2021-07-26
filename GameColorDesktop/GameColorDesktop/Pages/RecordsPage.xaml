@@ -12,7 +12,7 @@
         <Button Margin="5" Content="Назад"  VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click"/>
         <DataGrid Name="RecordsDG" HorizontalAlignment="Center" Margin="10" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Дата" Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Time}"/>
                 <DataGridTextColumn Header="Рекорд" Binding="{Binding Attemps}"/>
             </DataGrid.Columns>
         </DataGrid>

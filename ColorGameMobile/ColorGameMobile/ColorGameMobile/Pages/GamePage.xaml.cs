@@ -67,15 +67,13 @@ namespace ColorGameMobile.Pages
             if (a.ColorPositionMatching == 4)
             {
                 DisplayAlert("Победа!", $"Вы выйграли за {game.Attemps} ходов", "Начать заного");
-                //List<Record> records = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records);
-                //if (records == null)
-                //    records = new List<Record>();
-                //if (records.Any(i => i.Attemps >= game.Attemps))
-                //{
-                //    records.Add(new Record() { Attemps = game.Attemps, Date = DateTime.Now });
-                //    Properties.Settings.Default.Records = JsonConvert.SerializeObject(records);
-                //    Properties.Settings.Default.Save();
-                //}
+                if (Record.Records == null)
+                    Record.Records = new List<Record>();
+                if (Record.Records.Any(i => i.Attemps >= game.Attemps))
+                {
+                    Record.Records.Add(new Record() { Attemps = game.Attemps });
+                    Record.SaveRecords();
+                }
                 game = new MatchGame<SolidColorBrush>(colors, GameMode.SingleColors, 10, 4);
                 chosedColors = new List<SolidColorBrush>();
                 answers = new List<Response>();

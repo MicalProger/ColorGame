@@ -36,3 +36,9 @@ C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGam
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\obj\Debug\netstandard2.0\ColorGameMobile.dll
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\obj\Debug\netstandard2.0\ref\ColorGameMobile.dll
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\obj\Debug\netstandard2.0\ColorGameMobile.pdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\obj\Debug\netstandard2.0\Pages\RecordsPage.xaml.g.cs
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile\bin\Debug\netstandard2.0\Mono.Android.xml

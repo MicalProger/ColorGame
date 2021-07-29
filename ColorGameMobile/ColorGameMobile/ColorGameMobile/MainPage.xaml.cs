@@ -14,12 +14,16 @@ namespace ColorGameMobile
         public MainPage()
         {
             InitializeComponent();
-            Application.Current.UserAppTheme = OSAppTheme.Light;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new GamePage();
+            Navigation.PushModalAsync(new NavigationPage(new GamePage()));
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NavigationPage(new RecordsPage()));
         }
     }
 }

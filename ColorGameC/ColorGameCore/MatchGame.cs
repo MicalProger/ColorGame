@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +35,7 @@ namespace ColorGameCore
 
     public class MatchGame<T>
     {
+        public Stopwatch GameTime;
         public int Attemps;
         private List<T> _hiddenValues;
         private List<T> _totalValues;
@@ -42,6 +44,7 @@ namespace ColorGameCore
 
         public MatchGame(List<T> values, GameMode mode, int maxAttempt, int lenght)
         {
+            GameTime = new Stopwatch();
             this._totalValues = values;
             this._mode = mode;
             this._maxAttempt = maxAttempt;
@@ -65,6 +68,7 @@ namespace ColorGameCore
 
                     break;
             }
+            GameTime.Start();
         }
 
         public List<T> GetHidden()

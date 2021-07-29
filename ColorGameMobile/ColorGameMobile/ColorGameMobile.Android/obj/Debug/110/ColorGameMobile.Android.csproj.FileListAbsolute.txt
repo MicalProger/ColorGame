@@ -1155,3 +1155,12 @@ C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGam
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Mikhail\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\ColorGameCore.dll.mdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\ColorGameCore.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\ColorGameCore.pdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\ColorGameCore.dll.mdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\android\assets\ColorGameCore.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\android\assets\ColorGameCore.dll.mdb
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\android\assets\Xamarin.Forms.DataGrid.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RazRab\source\repos\ColorGame\ColorGameMobile\ColorGameMobile\ColorGameMobile.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll

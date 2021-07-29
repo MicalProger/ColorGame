@@ -14,7 +14,9 @@ namespace GameColorDesktop
         public int Attemps { get; set; }
         public TimeSpan Time { get; set; }
 
-        public static List<Record> Records = File.Exists(path) ? JsonConvert.DeserializeObject<List<Record>>(File.ReadAllText(path)) : new List<Record>();
+        public static List<Record> Records = File.Exists(path) ? 
+            JsonConvert.DeserializeObject<List<Record>>(File.ReadAllText(path))
+            : new List<Record>();
 
         public static void SaveRecords() => File.WriteAllText(path, JsonConvert.SerializeObject(Records));
     }

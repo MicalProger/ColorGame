@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameColorDesktop;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ColorGameMobile.Pages
         public RecordsPage()
         {
             InitializeComponent();
+            RecordsDG.ItemsSource = Record.Records;
         }
     }
 }

@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "ColorGameMobile.Android.dll" comes first in this list. */
 		"ColorGameMobile.Android.dll",
 		"ColorGameCore.dll",
+		"Newtonsoft.Json.dll",
 		"ColorGameMobile.dll",
 		"FormsViewGroup.dll",
 		"Xamarin.AndroidX.Activity.dll",
@@ -51,6 +52,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.ViewPager2.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.DataGrid.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",

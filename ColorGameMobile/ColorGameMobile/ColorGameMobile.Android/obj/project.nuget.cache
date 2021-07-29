@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4957EeGm/HAUGgM0LdOnhDv/MLJMCjx2sT0OXa2HmO1w4MY5VuYnEV8ZVKFF0u244EQQiZrMvzxw5/ZdeHyLbA==",
+  "dgSpecHash": "AhM/Cw0FGPikw5QhSqja6xorz4qxV8NcUIWVCEgcGAVEg/Zlj7BwLA8jh235R5XVhRR6w1YMflxfsSH04x0NcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.Android\\ColorGameMobile.Android.csproj",
+  "projectFilePath": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.Android\\ColorGameMobile.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mikhail\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\RazRab\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",
@@ -51,6 +51,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager2\\1.0.0.8\\xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\RazRab\\.nuget\\packages\\xamarin.forms.datagrid\\4.8.0\\xamarin.forms.datagrid.4.8.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "RQozpAIGbYcf3cxfRYowdY3buBNJ9hH7i6VMdl9Pr7jcOpDvfO40BCmSMoGJfDVd/GsmS6Gen8h2azo0qOjYAw==",
+  "dgSpecHash": "1EEFJYmF/JXc+1s0JI4aw6RDzyVxKuLk78lj4/EVkNQN0rHjSCa4gMW7KRJeQCKCO9QfUCqfA7ZDNVqfuVxV/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
+  "projectFilePath": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mikhail\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Mikhail\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Mikhail\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\RazRab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\RazRab\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\RazRab\\.nuget\\packages\\xamarin.forms.datagrid\\4.8.0\\xamarin.forms.datagrid.4.8.0.nupkg.sha512"
   ],
   "logs": []
 }

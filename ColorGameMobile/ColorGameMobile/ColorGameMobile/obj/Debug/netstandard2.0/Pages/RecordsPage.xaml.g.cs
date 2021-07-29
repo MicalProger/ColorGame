@@ -17,8 +17,12 @@ namespace ColorGameMobile.Pages {
     public partial class RecordsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.DataGrid.DataGrid RecordsDG;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(RecordsPage));
+            RecordsDG = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DataGrid.DataGrid>(this, "RecordsDG");
         }
     }
 }

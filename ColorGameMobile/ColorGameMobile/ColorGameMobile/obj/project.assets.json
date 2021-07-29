@@ -63,6 +63,18 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
       }
     }
   },
@@ -523,35 +535,50 @@
         "xamarin.forms.5.0.0.2012.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.DataGrid/4.8.0": {
+      "sha512": "aWVJQ2W5FKrmJgmt8aBhH1RumvUycM89vL0+JlTril+4QciUwerNCr9FV62jBeEXBp6/VUF4XX+9MfJtzjPWjQ==",
+      "type": "package",
+      "path": "xamarin.forms.datagrid/4.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll",
+        "xamarin.forms.datagrid.4.8.0.nupkg.sha512",
+        "xamarin.forms.datagrid.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.DataGrid >= 4.8.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mikhail\\.nuget\\packages\\": {},
+    "C:\\Users\\RazRab\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
+      "projectUniqueName": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
       "projectName": "ColorGameMobile",
-      "projectPath": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
-      "packagesPath": "C:\\Users\\Mikhail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\obj\\",
+      "projectPath": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.csproj",
+      "packagesPath": "C:\\Users\\RazRab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mikhail\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RazRab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -592,6 +619,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.DataGrid": {
+            "target": "Package",
+            "version": "[4.8.0, )"
           }
         },
         "imports": [
@@ -604,7 +635,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

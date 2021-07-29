@@ -1,5 +1,6 @@
 ﻿using ColorGameCore;
 using GameColorDesktop;
+using Java.IO;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,13 @@ namespace ColorGameMobile.Pages
         {
             InitializeComponent();
             RestartGame();
+            Device.StartTimer(new TimeSpan(0, 0, 0, 0, 500), UpdateTimer);
+        }
+
+        bool UpdateTimer()
+        {
+            TimerLabel.Text = game.GameTime.Elapsed.ToString().Substring(0, 8);
+            return true;
         }
 
         public void RestartGame()
@@ -41,7 +49,7 @@ namespace ColorGameMobile.Pages
                 currentColors.Add((SolidColorBrush)(sender as Button).Background);
 
             }
-            else
+            else if(currentColorIndex != -1)
             {
                 currentColors[currentColorIndex] = (SolidColorBrush)(sender as Button).Background;
                 currentColorIndex = -1;
@@ -50,12 +58,15 @@ namespace ColorGameMobile.Pages
             CurrentTryLV.ItemsSource = currentColors;
         }
 
-        private void OnGetRespone(object sender, EventArgs e)
+        private async void OnGetRespone(object sender, EventArgs e)
         {
             if (currentColors.Count != 4)
                 return;
             chosedColors.AddRange(currentColors);
             var a = game.GetResponse(currentColors);
+            currentColors.Clear();
+            CurrentTryLV.ItemsSource = null;
+            CurrentTryLV.ItemsSource = currentColors;
             if (a == null)
             {
                 _ = DisplayAlert("Проигрыш!", "Попытки закончились.", "Ок");
@@ -66,18 +77,21 @@ namespace ColorGameMobile.Pages
             }
             if (a.ColorPositionMatching == 4)
             {
-                DisplayAlert("Победа!", $"Вы выйграли за {game.Attemps} ходов", "Начать заного");
                 if (Record.Records == null)
                     Record.Records = new List<Record>();
-                if (Record.Records.Any(i => i.Attemps >= game.Attemps))
+                if (!Record.Records.Any(i => i.Attemps <= game.Attemps))
                 {
-                    Record.Records.Add(new Record() { Attemps = game.Attemps });
+                    Record.Records.Add(new Record() { Attemps = game.Attemps, Time = new TimeSpan(0, 2, 0) });
                     Record.SaveRecords();
                 }
-                game = new MatchGame<SolidColorBrush>(colors, GameMode.SingleColors, 10, 4);
-                chosedColors = new List<SolidColorBrush>();
-                answers = new List<Response>();
-                return;
+                if (await DisplayAlert("Победа!", $"Вы выйграли за {game.Attemps} ходов", "На главный экран", "Начать заного"))
+                {
+                    await Navigation.PopAsync();
+                    return;
+                }
+                else
+                    RestartGame();
+
             }
 
             else
@@ -88,7 +102,7 @@ namespace ColorGameMobile.Pages
 
         void UpdateView()
         {
-            ResponesSL.ScrollToAsync(600, 0, false);
+            ResponesSL.ScrollToAsync(0, 600, false);
             ColorsCollector.Children.Clear();
             StackLayout layout = new StackLayout() { Orientation = StackOrientation.Horizontal, Margin = new Thickness(5) };
             int answerIndex = 0;

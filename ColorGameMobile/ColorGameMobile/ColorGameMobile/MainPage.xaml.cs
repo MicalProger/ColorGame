@@ -14,6 +14,7 @@ namespace ColorGameMobile
         public MainPage()
         {
             InitializeComponent();
+            Application.Current.UserAppTheme = OSAppTheme.Light;
         }
 
         private void Button_Clicked(object sender, EventArgs e)

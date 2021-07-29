@@ -4,7 +4,21 @@
              x:Class="ColorGameMobile.Pages.GamePage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="End">
-            <StackLayout  Background="Wheat" HeightRequest="750" Orientation="Horizontal"/>
+            <ScrollView  x:Name="ResponesSL" HorizontalOptions="EndAndExpand">
+                <StackLayout x:Name="ColorsCollector" Rotation="180" Background="Wheat" HeightRequest="600" Orientation="Vertical" Margin="5"/>
+            </ScrollView>
+            <Button Text="Получить отзыв" Clicked="OnGetRespone"/>
+            <ListView RowHeight="50" HeightRequest="250" x:Name="CurrentTryLV" Margin="5" ItemSelected="CurrentTryLV_ItemSelected" SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <BoxView BackgroundColor="{Binding Color}" Margin="5" HeightRequest="50" WidthRequest="50"/>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal" x:Name="ButtonsSL">
                 <Button Background="Red" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45"></Button>
                 <Button Background="Green" Clicked="AddColor" Margin="5" HeightRequest="45" WidthRequest="45"></Button>

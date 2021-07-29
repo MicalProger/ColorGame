@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4PI1t22QNRldnTKZZXLj1wHVTxnBBxlq7XeGdsfz1KK0AU/nfxAQJSVUgVvDgbLc/zh8CGMKIx/QH+R1iYibeg==",
+  "dgSpecHash": "4957EeGm/HAUGgM0LdOnhDv/MLJMCjx2sT0OXa2HmO1w4MY5VuYnEV8ZVKFF0u244EQQiZrMvzxw5/ZdeHyLbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RazRab\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.Android\\ColorGameMobile.Android.csproj",
+  "projectFilePath": "C:\\Users\\Mikhail\\source\\repos\\ColorGame\\ColorGameMobile\\ColorGameMobile\\ColorGameMobile.Android\\ColorGameMobile.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RazRab\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Mikhail\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

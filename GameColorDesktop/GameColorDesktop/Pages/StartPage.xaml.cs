@@ -24,10 +24,7 @@ namespace GameColorDesktop.Pages
         public StartPage()
         {
             InitializeComponent();
-            if (MessageBox.Show("Усложнить игру", "Начало игры", MessageBoxButton.YesNo) == MessageBoxResult.OK)
-               GamePage.Mode = GameMode.MatchingColors;
-            else
-                GamePage.Mode = GameMode.SingleColors;
+
         }
 
         private void OnGameOpen(object sender, RoutedEventArgs e)
@@ -38,6 +35,14 @@ namespace GameColorDesktop.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new RecordsPage());
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Усложнить игру", "Начало игры", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                GamePage.Mode = GameMode.MatchingColors;
+            else
+                GamePage.Mode = GameMode.SingleColors;
         }
     }
 }

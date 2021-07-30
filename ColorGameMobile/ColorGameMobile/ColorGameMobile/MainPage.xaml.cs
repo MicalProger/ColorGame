@@ -1,4 +1,5 @@
-﻿using ColorGameMobile.Pages;
+﻿using ColorGameCore;
+using ColorGameMobile.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,10 @@ namespace ColorGameMobile
         public MainPage()
         {
             InitializeComponent();
+            Task.Run(() =>
+            {
+                GamePage.Mode = DisplayAlert("Новая игра", "Выберите режим", "Сложный", "Простой").Result ? GameMode.MatchingColors : GameMode.SingleColors;
+            });
         }
 
         private void Button_Clicked(object sender, EventArgs e)

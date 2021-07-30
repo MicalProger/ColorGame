@@ -16,7 +16,7 @@ namespace ColorGameMobile.Pages
         public RecordsPage()
         {
             InitializeComponent();
-            RecordsDG.ItemsSource = Record.Records;
+            RecordsDG.ItemsSource = Record.Records.OrderBy(i => i.Attemps).ThenBy(i => i.Time);
         }
     }
 }

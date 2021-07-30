@@ -38,16 +38,21 @@ namespace GameColorDesktop.Pages
         public MatchGame<SolidColorBrush> game;
         public List<Response> answers;
         DispatcherTimer timer;
-        public void ResetGame()
+        public void ResetGame(bool askMode = true)
         {
+            if (askMode)
+                Mode = MessageBox.Show("Усложнить игру", "Начало игры", MessageBoxButton.YesNo) == MessageBoxResult.Yes ? GameMode.MatchingColors : GameMode.SingleColors;
             game = new MatchGame<SolidColorBrush>(colors, Mode, 10, 4);
             chosedColors = new List<SolidColorBrush>();
             answers = new List<Response>();
+            LocalTryLW.ItemsSource = null;
+            ColorsSP.Children.Clear();
+
         }
         public GamePage()
         {
             InitializeComponent();
-            ResetGame();
+            ResetGame(false);
             var recs = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records);
             if (recs != null)
             {
@@ -74,9 +79,9 @@ namespace GameColorDesktop.Pages
         private void AddColor(object sender, RoutedEventArgs e)
         {
             var local = LocalTryLW.ItemsSource as List<Rectangle> == null ? new List<Rectangle>() : LocalTryLW.ItemsSource as List<Rectangle>;
-            if (local.Count > 4) return;
             if (LocalTryLW.SelectedIndex == -1)
             {
+                if (local.Count >= 4) return;
                 local.Add(new Rectangle() { Fill = (sender as Button).Background, Width = 70, Height = 70, Margin = new Thickness(5) });
                 LocalTryLW.ItemsSource = null;
                 LocalTryLW.ItemsSource = local;
@@ -170,14 +175,10 @@ namespace GameColorDesktop.Pages
                 List<Record> records = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records);
                 if (records == null)
                     records = new List<Record>();
-                if (records.Count == 0 || records.Min(i => i.Attemps) > game.Attemps)
-                {
-                    records.Add(new Record() { Attemps = game.Attemps, Time = time.Elapsed, Mode = Mode });
-                    Properties.Settings.Default.Records = JsonConvert.SerializeObject(records);
-                    Properties.Settings.Default.Save();
-                }
+                records.Add(new Record() { Attemps = game.Attemps, Time = time.Elapsed, Mode = Mode });
+                Properties.Settings.Default.Records = JsonConvert.SerializeObject(records);
+                Properties.Settings.Default.Save();
                 timer.Stop();
-                var complexity = MessageBox.Show("Усложнить игру", "Начало игры", MessageBoxButton.YesNo);
                 ResetGame();
                 RecordsDGEasy.ItemsSource = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records).Where(i => i.Mode == GameMode.SingleColors);
                 RecordsDGHard.ItemsSource = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records).Where(i => i.Mode == GameMode.MatchingColors);

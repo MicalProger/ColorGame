@@ -22,10 +22,11 @@ namespace ColorGameMobile.Pages
         int currentColorIndex = -1;
         public MatchGame<SolidColorBrush> game;
         public List<Response> answers;
+        public static GameMode Mode;
         public GamePage()
         {
             InitializeComponent();
-            RestartGame();
+            RestartGame(false);
             Device.StartTimer(new TimeSpan(0, 0, 0, 0, 500), UpdateTimer);
         }
 
@@ -35,9 +36,11 @@ namespace ColorGameMobile.Pages
             return true;
         }
 
-        public void RestartGame()
+        public async void RestartGame(bool askMode = true)
         {
-            game = new MatchGame<SolidColorBrush>(colors, GameMode.SingleColors, 10, 4);
+            if (askMode)
+                Mode = await DisplayAlert("Новая игра", "Выберите режим", "Сложный", "Простой") ? GameMode.MatchingColors : GameMode.SingleColors;
+            game = new MatchGame<SolidColorBrush>(colors, Mode, 10, 4);
             chosedColors = new List<SolidColorBrush>();
             answers = new List<Response>();
             currentColors = new List<SolidColorBrush>();
@@ -49,7 +52,7 @@ namespace ColorGameMobile.Pages
                 currentColors.Add((SolidColorBrush)(sender as Button).Background);
 
             }
-            else if(currentColorIndex != -1)
+            else if (currentColorIndex != -1)
             {
                 currentColors[currentColorIndex] = (SolidColorBrush)(sender as Button).Background;
                 currentColorIndex = -1;
@@ -70,20 +73,16 @@ namespace ColorGameMobile.Pages
             if (a == null)
             {
                 _ = DisplayAlert("Проигрыш!", "Попытки закончились.", "Ок");
-                game = new MatchGame<SolidColorBrush>(colors, GameMode.SingleColors, 10, 4);
-                chosedColors = new List<SolidColorBrush>();
-                answers = new List<Response>();
+                RestartGame();
                 return;
             }
             if (a.ColorPositionMatching == 4)
             {
                 if (Record.Records == null)
                     Record.Records = new List<Record>();
-                if (!Record.Records.Any(i => i.Attemps <= game.Attemps))
-                {
-                    Record.Records.Add(new Record() { Attemps = game.Attemps, Time = new TimeSpan(0, 2, 0) });
+
+                    Record.Records.Add(new Record() { Attemps = game.Attemps, Time = game.GameTime.Elapsed });
                     Record.SaveRecords();
-                }
                 if (await DisplayAlert("Победа!", $"Вы выйграли за {game.Attemps} ходов", "На главный экран", "Начать заного"))
                 {
                     await Navigation.PopAsync();

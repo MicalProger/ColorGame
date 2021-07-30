@@ -26,7 +26,7 @@ namespace GameColorDesktop.Pages
             InitializeComponent();
             List<Record> records = JsonConvert.DeserializeObject<List<Record>>(Properties.Settings.Default.Records);
             if (records != null)
-                RecordsDG.ItemsSource = records;
+                RecordsDG.ItemsSource = records.OrderBy(i => i.Attemps).ThenBy(i => i.Time).ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
